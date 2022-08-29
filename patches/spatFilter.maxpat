@@ -109,12 +109,12 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "multichannelsignal", "" ],
-					"patching_rect" : [ 75.0, 361.0, 208.0, 22.0 ],
+					"patching_rect" : [ 75.0, 361.0, 134.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"parameter_enable" : 0
 					}
 ,
-					"text" : "spat5.cascade~ @channels 8 @mc 1"
+					"text" : "spat5.cascade~ @mc 1"
 				}
 
 			}
@@ -122,7 +122,7 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-2",
-					"index" : 1,
+					"index" : 0,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -134,11 +134,11 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-1",
-					"index" : 1,
+					"index" : 0,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "multichannelsignal" ],
+					"outlettype" : [ "" ],
 					"patching_rect" : [ 75.0, 105.0, 30.0, 30.0 ]
 				}
 
@@ -401,7 +401,55 @@
 				}
 
 			}
- ]
+ ],
+		"parameters" : 		{
+			"obj-432::obj-102" : [ "live.toggle[436]", "live.toggle", 0 ],
+			"obj-432::obj-3" : [ "live.text[1]", "live.text[9]", 0 ],
+			"obj-432::obj-57" : [ "live.text[9]", "live.text[9]", 0 ],
+			"obj-432::obj-58" : [ "live.text[10]", "live.text[9]", 0 ],
+			"obj-432::obj-62" : [ "live.text[12]", "live.text[9]", 0 ],
+			"obj-432::obj-72" : [ "live.text[14]", "live.text[8]", 0 ],
+			"obj-433" : [ "live.dial[53]", " ", 0 ],
+			"obj-435" : [ "live.dial[54]", " ", 0 ],
+			"parameterbanks" : 			{
+				"0" : 				{
+					"index" : 0,
+					"name" : "",
+					"parameters" : [ "-", "-", "-", "-", "-", "-", "-", "-" ]
+				}
+
+			}
+,
+			"inherited_shortname" : 1
+		}
+,
+		"dependency_cache" : [ 			{
+				"name" : "spat5.cascade~.mxe64",
+				"type" : "mx64"
+			}
+, 			{
+				"name" : "spat5.filterdesign.mxe64",
+				"type" : "mx64"
+			}
+, 			{
+				"name" : "spat5.gui.control.maxpat",
+				"bootpath" : "~/Documents/Max 8/Packages/spat5-x64/patchers",
+				"patcherrelativepath" : "../../../Max 8/Packages/spat5-x64/patchers",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "spat5.osc.route.mxe64",
+				"type" : "mx64"
+			}
+, 			{
+				"name" : "thru.maxpat",
+				"bootpath" : "C74:/patchers/m4l/Pluggo for Live resources/patches",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+ ],
+		"autosave" : 0
 	}
 
 }
