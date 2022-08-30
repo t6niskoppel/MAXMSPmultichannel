@@ -10,9 +10,9 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 77.0, 1447.0, 969.0 ],
+		"rect" : [ 34.0, 85.0, 1447.0, 969.0 ],
 		"bglocked" : 0,
-		"openinpresentation" : 0,
+		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
 		"default_fontface" : 0,
 		"default_fontname" : "Arial",
@@ -35,14 +35,14 @@
 		"description" : "",
 		"digest" : "",
 		"tags" : "",
-		"style" : "",
+		"style" : "darkMode",
 		"subpatcher_template" : "",
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
 					"comment" : "Midiin",
 					"id" : "obj-88",
-					"index" : 0,
+					"index" : 1,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -55,7 +55,7 @@
 				"box" : 				{
 					"comment" : "Audio out (mc)",
 					"id" : "obj-86",
-					"index" : 0,
+					"index" : 1,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -226,7 +226,8 @@
 							"parameter_mmax" : 48.0,
 							"parameter_mmin" : 1.0,
 							"parameter_shortname" : "channels",
-							"parameter_type" : 1
+							"parameter_type" : 1,
+							"parameter_unitstyle" : 0
 						}
 
 					}
@@ -353,7 +354,7 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-72",
-					"lastchannelcount" : 12,
+					"lastchannelcount" : 8,
 					"maxclass" : "mc.live.gain~",
 					"numinlets" : 1,
 					"numoutlets" : 4,
@@ -364,7 +365,7 @@
 					"presentation_rect" : [ 86.499999523162842, 1522.416651010513306, 48.0, 136.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_longname" : "mc.live.gain~",
+							"parameter_longname" : "mc.live.gain~[1]",
 							"parameter_mmax" : 6.0,
 							"parameter_mmin" : -70.0,
 							"parameter_shortname" : "mc.live.gain~",
@@ -719,7 +720,7 @@
 					"patching_rect" : [ 1159.499999523162842, 308.916651010513306, 362.0, 207.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 1159.499999523162842, 308.916651010513306, 362.0, 207.0 ],
-					"setfilter" : [ 0, 4, 1, 0, 0, 1435.905517578125, 1.404815316200256, 0.803249597549438, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ],
+					"setfilter" : [ 0, 4, 1, 0, 0, 1435.905517578125, 0.000099999997474, 0.803249597549438, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ],
 					"varname" : "filtergraph~"
 				}
 
@@ -871,7 +872,7 @@
 						"size" : 128
 					}
 ,
-					"showeditor" : 1,
+					"showeditor" : 0,
 					"text" : "table"
 				}
 
@@ -1667,123 +1668,36 @@
 
 			}
  ],
-		"parameters" : 		{
-			"obj-14" : [ "q", "q", 0 ],
-			"obj-16" : [ "channels", "channels", 0 ],
-			"obj-2" : [ "freq", "freq", 0 ],
-			"obj-22" : [ "gain", "gain", 0 ],
-			"obj-46" : [ "rect[1]", "rect", 0 ],
-			"obj-47" : [ "tri", "tri", 0 ],
-			"obj-55" : [ "decay", "decay", 0 ],
-			"obj-56" : [ "saw", "saw", 0 ],
-			"obj-57" : [ "rect[4]", "rect", 0 ],
-			"obj-60" : [ "sustain", "sustain", 0 ],
-			"obj-62" : [ "release", "release", 0 ],
-			"obj-7" : [ "attack", "attack", 0 ],
-			"obj-72" : [ "mc.live.gain~", "mc.live.gain~", 0 ],
-			"parameterbanks" : 			{
-				"0" : 				{
-					"index" : 0,
-					"name" : "",
-					"parameters" : [ "-", "-", "-", "-", "-", "-", "-", "-" ]
+		"styles" : [ 			{
+				"name" : "darkMode",
+				"default" : 				{
+					"accentcolor" : [ 0.298039215686275, 0.27843137254902, 0.27843137254902, 1.0 ],
+					"bgcolor" : [ 0.309803921568627, 0.309803921568627, 0.309803921568627, 1.0 ],
+					"bgfillcolor" : 					{
+						"angle" : 270.0,
+						"autogradient" : 0.0,
+						"color" : [ 0.462745098039216, 0.462745098039216, 0.462745098039216, 1.0 ],
+						"color1" : [ 0.368627450980392, 0.368627450980392, 0.368627450980392, 1.0 ],
+						"color2" : [ 0.2, 0.2, 0.2, 1.0 ],
+						"proportion" : 0.5,
+						"type" : "color"
+					}
+,
+					"clearcolor" : [ 0.368627450980392, 0.368627450980392, 0.368627450980392, 0.0 ],
+					"color" : [ 0.611764705882353, 0.611764705882353, 0.611764705882353, 1.0 ],
+					"editing_bgcolor" : [ 0.07843137254902, 0.07843137254902, 0.07843137254902, 1.0 ],
+					"elementcolor" : [ 0.666666666666667, 0.666666666666667, 0.666666666666667, 1.0 ],
+					"locked_bgcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
+					"patchlinecolor" : [ 0.647058823529412, 0.647058823529412, 0.647058823529412, 1.0 ],
+					"selectioncolor" : [ 0.482352941176471, 0.666666666666667, 0.494117647058824, 1.0 ],
+					"stripecolor" : [ 0.482352941176471, 0.482352941176471, 0.482352941176471, 1.0 ],
+					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 				}
-
+,
+				"parentstyle" : "",
+				"multi" : 0
 			}
-,
-			"inherited_shortname" : 1
-		}
-,
-		"parameter_map" : 		{
-			"midi" : 			{
-				"attack" : 				{
-					"srcname" : "16.ctrl.0.chan.1.port.midi",
-					"min" : 0.0,
-					"max" : 4000.0,
-					"scale" : 3.0,
-					"flags" : 2
-				}
-,
-				"decay" : 				{
-					"srcname" : "17.ctrl.0.chan.1.port.midi",
-					"min" : 0.0,
-					"max" : 4000.0,
-					"scale" : 3.0,
-					"flags" : 2
-				}
-,
-				"sustain" : 				{
-					"srcname" : "18.ctrl.0.chan.1.port.midi",
-					"min" : 0.0,
-					"max" : 100.0,
-					"scale" : 2.0,
-					"flags" : 2
-				}
-,
-				"release" : 				{
-					"srcname" : "19.ctrl.0.chan.1.port.midi",
-					"min" : 0.0,
-					"max" : 4000.0,
-					"scale" : 3.0,
-					"flags" : 2
-				}
-,
-				"gain~" : 				{
-					"srcname" : "23.ctrl.0.chan.1.port.midi",
-					"min" : 0.0,
-					"max" : 157.0,
-					"flags" : 2
-				}
-,
-				"freq" : 				{
-					"srcname" : "20.ctrl.0.chan.1.port.midi",
-					"min" : 20.0,
-					"max" : 20000.0,
-					"scale" : 5.0,
-					"flags" : 2
-				}
-,
-				"gain" : 				{
-					"srcname" : "21.ctrl.0.chan.1.port.midi",
-					"min" : 0.0,
-					"max" : 20.0,
-					"flags" : 2
-				}
-,
-				"q" : 				{
-					"srcname" : "22.ctrl.0.chan.1.port.midi",
-					"min" : 0.0,
-					"max" : 3.0,
-					"scale" : 4.0,
-					"flags" : 2
-				}
-,
-				"rect" : 				{
-					"srcname" : "2.ctrl.0.chan.1.port.midi",
-					"min" : 0.0,
-					"max" : 1.0,
-					"flags" : 2
-				}
-,
-				"tri" : 				{
-					"srcname" : "1.ctrl.0.chan.1.port.midi",
-					"min" : 0.0,
-					"max" : 1.0,
-					"flags" : 2
-				}
-,
-				"cycle" : 				{
-					"srcname" : "0.ctrl.0.chan.1.port.midi",
-					"min" : 0.0,
-					"max" : 1.0,
-					"flags" : 2
-				}
-
-			}
-
-		}
-,
-		"dependency_cache" : [  ],
-		"autosave" : 0,
+ ],
 		"bgcolor" : [ 0.490196078431373, 0.490196078431373, 0.490196078431373, 1.0 ],
 		"editing_bgcolor" : [ 0.407843137254902, 0.407843137254902, 0.407843137254902, 1.0 ]
 	}
