@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 1315.0, 85.0, 542.0, 1272.0 ],
+		"rect" : [ 34.0, 77.0, 1980.0, 993.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -39,6 +39,29 @@
 		"subpatcher_template" : "",
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-37",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "int" ],
+					"patching_rect" : [ 86.0, 53.0, 40.0, 22.0 ],
+					"text" : "midiin"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-33",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 220.0, 1621.0, 180.0, 22.0 ],
+					"text" : "mc.dac~ 9 10 11 12 13 14 15 16"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-36",
 					"maxclass" : "newobj",
@@ -96,7 +119,7 @@
 							"parameter_initial" : [ 8 ],
 							"parameter_initial_enable" : 1,
 							"parameter_linknames" : 1,
-							"parameter_longname" : "channels[5]",
+							"parameter_longname" : "channels[1]",
 							"parameter_mmax" : 48.0,
 							"parameter_mmin" : 1.0,
 							"parameter_shortname" : "channels",
@@ -138,11 +161,11 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-19",
-					"index" : 1,
+					"index" : 0,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "int" ],
+					"outlettype" : [ "" ],
 					"patching_rect" : [ 214.473854720592499, 11.0, 30.0, 30.0 ]
 				}
 
@@ -151,7 +174,7 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-18",
-					"index" : 1,
+					"index" : 0,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -385,7 +408,7 @@
 							"parameter_initial" : [ 8 ],
 							"parameter_initial_enable" : 1,
 							"parameter_linknames" : 1,
-							"parameter_longname" : "channels[4]",
+							"parameter_longname" : "channels",
 							"parameter_mmax" : 48.0,
 							"parameter_mmin" : 1.0,
 							"parameter_shortname" : "channels",
@@ -421,7 +444,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 189.557185113430023, 490.083332300186157, 50.0, 64.0 ],
-					"text" : "setvalue 1 0.299213"
+					"text" : "setvalue 6 0.283465"
 				}
 
 			}
@@ -1066,7 +1089,7 @@
 					"patching_rect" : [ 1159.499999523162842, 308.916651010513306, 362.0, 207.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 17.33828642598786, 190.279410421848297, 225.0, 135.137240588665009 ],
-					"setfilter" : [ 0, 3, 1, 0, 0, 85.560546875, 0.816217482089996, 0.402587443590164, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ],
+					"setfilter" : [ 0, 3, 1, 0, 0, 163.672943115234375, 0.432873278856277, 0.16545432806015, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ],
 					"style" : "darkMode",
 					"varname" : "filtergraph~"
 				}
@@ -1713,6 +1736,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-21", 0 ],
+					"source" : [ "obj-37", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-8", 0 ],
 					"source" : [ "obj-39", 0 ]
 				}
@@ -1926,6 +1956,15 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-18", 0 ],
+					"order" : 1,
+					"source" : [ "obj-72", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-33", 0 ],
+					"order" : 0,
 					"source" : [ "obj-72", 0 ]
 				}
 
@@ -2112,6 +2151,35 @@
 
 			}
  ],
+		"parameters" : 		{
+			"obj-14" : [ "q[2]", "q", 0 ],
+			"obj-16" : [ "channels", "channels", 0 ],
+			"obj-2" : [ "freq[2]", "freq", 0 ],
+			"obj-22" : [ "gain[2]", "gain", 0 ],
+			"obj-32" : [ "channels[1]", "channels", 0 ],
+			"obj-46" : [ "rect[3]", "rect", 0 ],
+			"obj-47" : [ "noise[1]", "noise", 0 ],
+			"obj-55" : [ "decay[2]", "decay", 0 ],
+			"obj-56" : [ "saw[2]", "saw", 0 ],
+			"obj-57" : [ "sine[2]", "sine", 0 ],
+			"obj-60" : [ "sustain[2]", "sustain", 0 ],
+			"obj-62" : [ "release[2]", "release", 0 ],
+			"obj-7" : [ "attack[2]", "attack", 0 ],
+			"obj-72" : [ "out[2]", "out", 0 ],
+			"parameterbanks" : 			{
+				"0" : 				{
+					"index" : 0,
+					"name" : "",
+					"parameters" : [ "-", "-", "-", "-", "-", "-", "-", "-" ]
+				}
+
+			}
+,
+			"inherited_shortname" : 1
+		}
+,
+		"dependency_cache" : [  ],
+		"autosave" : 0,
 		"styles" : [ 			{
 				"name" : "darkMode",
 				"default" : 				{
