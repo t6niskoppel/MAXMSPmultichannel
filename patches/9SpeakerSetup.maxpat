@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 77.0, 2014.0, 993.0 ],
+		"rect" : [ 42.0, 85.0, 2014.0, 993.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -86,7 +86,7 @@
 							"isbase64" : 1,
 							"sliderorder" : [  ],
 							"slidervisibility" : [ 1, 1, 1, 1, 1 ],
-							"blob" : "114.VMjLgjF....OVMEUy.Ea0cVZtMEcgQWY9vSRC8Vav8lak4Fc9LSLtDjKt3hKt3hKt3hKE4hKt3xRt3hKtfELTQUP3MELQcjXvD0Qt3hKt3hKtvyKIMzasA2atUlaz4COuX0TTMCTrU2Yo41TzEFck4C."
+							"blob" : "114.VMjLgjF....OVMEUy.Ea0cVZtMEcgQWY9vSRC8Vav8lak4Fc9LSLtDjKt3hKt3hKt3hKt3hKt3xRt3hKtfELTQUP3MELQcjXvD0Qt3hKt3hKtvyKIMzasA2atUlaz4COuX0TTMCTrU2Yo41TzEFck4C."
 						}
 ,
 						"snapshotlist" : 						{
@@ -99,7 +99,7 @@
 									"origin" : "Plugins.VST.NDI.Output.vst3info",
 									"type" : "VST3",
 									"subtype" : "AudioEffect",
-									"embed" : 0,
+									"embed" : 1,
 									"snapshot" : 									{
 										"pluginname" : "Plugins.VST.NDI.Output.vst3info",
 										"plugindisplayname" : "NDI Output",
@@ -110,7 +110,7 @@
 										"isbase64" : 1,
 										"sliderorder" : [  ],
 										"slidervisibility" : [ 1, 1, 1, 1, 1 ],
-										"blob" : "114.VMjLgjF....OVMEUy.Ea0cVZtMEcgQWY9vSRC8Vav8lak4Fc9LSLtDjKt3hKt3hKt3hKE4hKt3xRt3hKtfELTQUP3MELQcjXvD0Qt3hKt3hKtvyKIMzasA2atUlaz4COuX0TTMCTrU2Yo41TzEFck4C."
+										"blob" : "114.VMjLgjF....OVMEUy.Ea0cVZtMEcgQWY9vSRC8Vav8lak4Fc9LSLtDjKt3hKt3hKt3hKt3hKt3xRt3hKtfELTQUP3MELQcjXvD0Qt3hKt3hKtvyKIMzasA2atUlaz4COuX0TTMCTrU2Yo41TzEFck4C."
 									}
 ,
 									"fileref" : 									{
@@ -118,7 +118,7 @@
 										"filename" : "NDI Output.maxsnap",
 										"filepath" : "~/Documents/Max 8/Snapshots",
 										"filepos" : -1,
-										"snapshotfileid" : "1c6905ec99d3d6bbded3db1b6ee44c96"
+										"snapshotfileid" : "a0a6714eedd9351e72f2f125355275ff"
 									}
 
 								}
@@ -273,7 +273,25 @@
 										"filename" : "ValhallaSupermassive.maxsnap",
 										"filepath" : "~/Documents/Max 8/Snapshots",
 										"filepos" : -1,
-										"snapshotfileid" : "6dfbbc5f850b90fb9db3af429d76909e"
+										"snapshotfileid" : "4af14a157bfe298e3d995710e3db37d7"
+									}
+
+								}
+, 								{
+									"filetype" : "C74Snapshot",
+									"version" : 2,
+									"minorversion" : 0,
+									"name" : "ValhallaSupermassive",
+									"origin" : "ValhallaSupermassive.vst3info",
+									"type" : "VST3",
+									"subtype" : "AudioEffect",
+									"embed" : 0,
+									"fileref" : 									{
+										"name" : "ValhallaSupermassive",
+										"filename" : "ValhallaSupermassive.maxsnap",
+										"filepath" : "~/Documents/Max 8/Snapshots",
+										"filepos" : -1,
+										"snapshotfileid" : "4af14a157bfe298e3d995710e3db37d7"
 									}
 
 								}
@@ -426,7 +444,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 523.0, 396.0, 51.0, 480.0 ],
+						"rect" : [ 523.0, 396.0, 52.0, 480.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -4613,14 +4631,14 @@
 		"dependency_cache" : [ 			{
 				"name" : "NDI Output.maxsnap",
 				"bootpath" : "~/Documents/Max 8/Snapshots",
-				"patcherrelativepath" : "../../../Snapshots",
+				"patcherrelativepath" : "../../../Max 8/Snapshots",
 				"type" : "mx@s",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "ValhallaSupermassive.maxsnap",
 				"bootpath" : "~/Documents/Max 8/Snapshots",
-				"patcherrelativepath" : "../../../Snapshots",
+				"patcherrelativepath" : "../../../Max 8/Snapshots",
 				"type" : "mx@s",
 				"implicit" : 1
 			}
@@ -4632,7 +4650,7 @@
 			}
 , 			{
 				"name" : "mcSynth.maxpat",
-				"bootpath" : "~/Documents/Max 8/Max Projects/MAXMSPmultichannel/patches",
+				"bootpath" : "~/Documents/GitHub/MAXMSPmultichannel/patches",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
@@ -4668,7 +4686,7 @@
 , 			{
 				"name" : "spat5.monitor.maxpat",
 				"bootpath" : "~/Documents/Max 8/Packages/spat5-x64/patchers",
-				"patcherrelativepath" : "../../../Packages/spat5-x64/patchers",
+				"patcherrelativepath" : "../../../Max 8/Packages/spat5-x64/patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}

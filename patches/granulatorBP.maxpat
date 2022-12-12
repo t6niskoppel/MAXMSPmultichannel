@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 85.0, 1452.0, 953.0 ],
+		"rect" : [ 42.0, 85.0, 1452.0, 953.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -332,7 +332,7 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-1",
-					"index" : 1,
+					"index" : 0,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -2876,7 +2876,88 @@
 				}
 
 			}
- ]
+ ],
+		"parameters" : 		{
+			"obj-10" : [ "live.dial[46]", " ", 0 ],
+			"obj-101" : [ "live.dial[28]", "gain", 0 ],
+			"obj-102" : [ "live.dial[11]", "freq", 0 ],
+			"obj-104" : [ "live.dial[39]", " ", 0 ],
+			"obj-107" : [ "live.dial[44]", " ", 0 ],
+			"obj-109" : [ "live.toggle[6]", "live.toggle[4]", 0 ],
+			"obj-114" : [ "live.dial[40]", " ", 0 ],
+			"obj-21" : [ "live.dial[41]", "gain", 0 ],
+			"obj-26" : [ "live.dial[43]", " ", 0 ],
+			"obj-27" : [ "live.dial[13]", " ", 0 ],
+			"obj-34" : [ "live.dial[49]", " ", 0 ],
+			"obj-35" : [ "live.dial[29]", " ", 0 ],
+			"obj-38" : [ "live.dial[15]", " ", 0 ],
+			"obj-46" : [ "live.dial[42]", " ", 0 ],
+			"obj-47" : [ "live.dial[33]", "gain (dB)", 0 ],
+			"obj-50" : [ "live.dial[45]", " ", 0 ],
+			"obj-54" : [ "live.dial[14]", " ", 0 ],
+			"obj-57" : [ "live.dial[38]", " ", 0 ],
+			"obj-59" : [ "live.dial[12]", " ", 0 ],
+			"obj-64" : [ "live.text[3]", "live.text[3]", 0 ],
+			"obj-65::obj-58" : [ "live.text[10]", "live.text[9]", 0 ],
+			"obj-65::obj-62" : [ "live.text[12]", "live.text[9]", 0 ],
+			"obj-65::obj-6::obj-3" : [ "live.text", "live.text", 0 ],
+			"obj-65::obj-6::obj-6" : [ "live.text[1]", "live.text", 0 ],
+			"obj-66" : [ "live.toggle[7]", "live.toggle[76]", 0 ],
+			"obj-73" : [ "live.dial[48]", " ", 0 ],
+			"obj-75" : [ "live.dial[50]", " ", 0 ],
+			"obj-78" : [ "live.dial[47]", " ", 0 ],
+			"obj-8" : [ "live.numbox[19]", "live.numbox[2]", 0 ],
+			"obj-80" : [ "live.text[4]", "live.text[3]", 0 ],
+			"obj-83" : [ "live.tab[2]", "live.tab", 0 ],
+			"obj-86" : [ "live.text[5]", "live.text[3]", 0 ],
+			"obj-88" : [ "live.tab[3]", "live.tab", 0 ],
+			"obj-91" : [ "live.text[6]", "live.text[3]", 0 ],
+			"obj-92" : [ "live.text[7]", "live.text[3]", 0 ],
+			"obj-94" : [ "live.text[8]", "live.text[3]", 0 ],
+			"obj-95" : [ "live.menu[5]", "live.menu[1]", 0 ],
+			"obj-98" : [ "live.dial[37]", "Q", 0 ],
+			"parameterbanks" : 			{
+				"0" : 				{
+					"index" : 0,
+					"name" : "",
+					"parameters" : [ "-", "-", "-", "-", "-", "-", "-", "-" ]
+				}
+
+			}
+,
+			"inherited_shortname" : 1
+		}
+,
+		"dependency_cache" : [ 			{
+				"name" : "spat5.dsp.control.maxpat",
+				"bootpath" : "~/Documents/Max 8/Packages/spat5-x64/patchers",
+				"patcherrelativepath" : "../../../Max 8/Packages/spat5-x64/patchers",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "spat5.dsp.mute.bypass.maxpat",
+				"bootpath" : "~/Documents/Max 8/Packages/spat5-x64/patchers",
+				"patcherrelativepath" : "../../../Max 8/Packages/spat5-x64/patchers",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "spat5.osc.prepend.mxe64",
+				"type" : "mx64"
+			}
+, 			{
+				"name" : "spat5.osc.route.mxe64",
+				"type" : "mx64"
+			}
+, 			{
+				"name" : "thru.maxpat",
+				"bootpath" : "C74:/patchers/m4l/Pluggo for Live resources/patches",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+ ],
+		"autosave" : 0
 	}
 
 }

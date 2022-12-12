@@ -40,6 +40,19 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-21",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 127.0, 211.0, 150.0, 20.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 0.0, 154.0, 85.0, 20.0 ],
+					"text" : "Tõnis Koppel"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"format" : 6,
 					"id" : "obj-20",
 					"maxclass" : "flonum",
@@ -91,7 +104,7 @@
 				"box" : 				{
 					"comment" : "RampTime(0. 10000.)",
 					"id" : "obj-18",
-					"index" : 4,
+					"index" : 0,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -104,7 +117,7 @@
 				"box" : 				{
 					"comment" : "PeakVol(-70. 6.)",
 					"id" : "obj-17",
-					"index" : 3,
+					"index" : 0,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -117,11 +130,11 @@
 				"box" : 				{
 					"comment" : "Toggle(0,1)",
 					"id" : "obj-16",
-					"index" : 2,
+					"index" : 0,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "int" ],
+					"outlettype" : [ "" ],
 					"patching_rect" : [ 183.0, 111.0, 30.0, 30.0 ]
 				}
 
@@ -291,7 +304,7 @@
 				"box" : 				{
 					"comment" : "AudioOut(mono)",
 					"id" : "obj-2",
-					"index" : 1,
+					"index" : 0,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -303,11 +316,11 @@
 				"box" : 				{
 					"comment" : "AudioIn(mono)",
 					"id" : "obj-1",
-					"index" : 1,
+					"index" : 0,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "signal" ],
+					"outlettype" : [ "" ],
 					"patching_rect" : [ 138.0, 111.0, 30.0, 30.0 ]
 				}
 
@@ -323,7 +336,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 281.0, 300.0, 128.0, 128.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 0.0, 0.0, 85.0, 154.0 ],
+					"presentation_rect" : [ 0.0, 0.0, 85.0, 174.0 ],
 					"proportion" : 0.5
 				}
 
@@ -469,7 +482,25 @@
 				}
 
 			}
- ]
+ ],
+		"parameters" : 		{
+			"obj-5" : [ "volume[1]", "volume", 0 ],
+			"obj-7" : [ "peakVolume[1]", "peakVolume", 0 ],
+			"obj-8" : [ "rampTime[1]", "rampTime", 0 ],
+			"parameterbanks" : 			{
+				"0" : 				{
+					"index" : 0,
+					"name" : "",
+					"parameters" : [ "-", "-", "-", "-", "-", "-", "-", "-" ]
+				}
+
+			}
+,
+			"inherited_shortname" : 1
+		}
+,
+		"dependency_cache" : [  ],
+		"autosave" : 0
 	}
 
 }
