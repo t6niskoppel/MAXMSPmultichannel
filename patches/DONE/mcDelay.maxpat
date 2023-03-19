@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 42.0, 85.0, 1452.0, 929.0 ],
+		"rect" : [ 42.0, 85.0, 1452.0, 913.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -76,9 +76,9 @@
 					"maxclass" : "bpatcher",
 					"name" : "mcSliderBP.maxpat",
 					"numinlets" : 3,
-					"numoutlets" : 1,
+					"numoutlets" : 2,
 					"offset" : [ 0.0, 0.0 ],
-					"outlettype" : [ "multichannelsignal" ],
+					"outlettype" : [ "multichannelsignal", "" ],
 					"patching_rect" : [ 203.0, 243.0, 491.0, 247.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 0.0, 6.0, 491.0, 243.0 ],
@@ -116,19 +116,6 @@
 ,
 					"text" : "autopattr @autoname 1",
 					"varname" : "u100007423"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"comment" : "MC 41 in",
-					"id" : "obj-10",
-					"index" : 0,
-					"maxclass" : "inlet",
-					"numinlets" : 0,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 178.0, 744.086891174316406, 30.0, 30.0 ]
 				}
 
 			}
@@ -203,7 +190,7 @@
 					"outlettype" : [ "", "float" ],
 					"panelcolor" : [ 0.611764705882353, 0.290196078431373, 0.290196078431373, 1.0 ],
 					"parameter_enable" : 1,
-					"patching_rect" : [ 66.0, 1033.375, 54.0, 65.0 ],
+					"patching_rect" : [ 42.0, 1026.875, 54.0, 65.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 493.0, 117.0, 54.0, 65.0 ],
 					"saved_attribute_attributes" : 					{
@@ -371,7 +358,8 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 45.6875, 744.086891174316406, 30.0, 30.0 ]
+					"patching_rect" : [ 45.6875, 744.086891174316406, 30.0, 30.0 ],
+					"varname" : "AudioIn"
 				}
 
 			}
@@ -434,13 +422,6 @@
 				"patchline" : 				{
 					"destination" : [ "obj-2", 0 ],
 					"source" : [ "obj-1", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-1", 0 ],
-					"source" : [ "obj-10", 0 ]
 				}
 
 			}
@@ -798,6 +779,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-1", 0 ],
+					"source" : [ "obj-4", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-13", 0 ],
 					"source" : [ "obj-4", 0 ]
 				}
@@ -853,7 +841,7 @@
 ,
 		"dependency_cache" : [ 			{
 				"name" : "mcSliderBP.maxpat",
-				"bootpath" : "~/Documents/GitHub/MAXMSPmultichannel/patches",
+				"bootpath" : "~/Documents/GitHub/MAXMSPmultichannel/patches/DONE",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
